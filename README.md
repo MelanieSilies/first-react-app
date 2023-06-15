@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+##English
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Set up your own React project with vite e.g. :heads-down: (delete all files you don't need) and use scss as well
+create own components for the header and footer, which are embedded in App.jsx
+create another component, named AccountCheck, which is also embedded in App.jsx
+           -in this component you create a variable called balance.
+          -assign a value to the variable (either a positive value or a negative value)
+          -inserts conditional rendering, depending on whether the value is positive or negative, money is still paid out or not
+                       e.g.
+                      <p>account balance is xxx . A payout is possible</p>
+                      <p>Account balance is xxx . No more payout is possible</p>
+          -also add some inline styling for the visual representation of your text
+          -now create an array (name transactions) with single objects in which the last income/expenses are stored. e.g. [ { where: "Gas station", value: -25.00}]
+          -use map to show all account transactions as a list (all expenses in red, all income in green - add classes for the visual representation depending on the condition)
 
-## Available Scripts
+BONUS :muscle: try to swap your data (array with bank transactions and the variable balance into App.jsx and then pass it as props into the component AccountCheck 
 
-In the project directory, you can run:
 
-### `npm start`
+<hr>
+## Deutsch
+Setzt auch mal ein eigenes React Projekt auf mit vite z.b.  :heads-down:  (löscht alle Dateien, welche ihr nicht benötigt) und nutzt am besten auch scss
+erstellt jeweils eigene components für den Header und Footer, welche in App.jsx eingebettet sind
+erstellt eine weitere component, mit dem Namen AccountCheck, welche auch in App.jsx eingebettet wird
+           -in dieser component legt ihr eine variable namens balance (Kontostand) an.
+          -weißt der variable einen Wert zu (entweder ein positiver Wert oder ein negativer Wert)
+          -fügt conditional rendering ein, je nachdem ob der Wert positiv oder negativ ist, wird noch Geld ausgezahlt oder nicht
+                       z.b.
+                      <p>Kontostand ist xxx . Eine Auszahlung ist möglich</p>
+                      <p>Kontostand ist xxx . Es ist keine Auszahlung mehr möglich</p>
+          -füge auch noch ein wenig inline styling hinzu für die visuelle Darstellung deines Textes
+          -nun lege noch ein array (name transactions) mit einzelnen objekten an in welchem die  letzten Einnahmen/ Ausgaben gespeichern sind. z.b. [ { where: "Tankstelle", value: -25.00}]
+          -nutze map um alle Kontobewegungen als Liste anzuzeigen (alle Ausgaben in rot, alle Einnahmen in grün - füge für die visuelle Darstellung Klassen je nach condition hinzu)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+BONUS :muskel: versuche deine Daten (array mit Bankbewegungen und die variable balance in die App.jsx auszulagern und dann als props in die component AccountCheck durchzureichen
